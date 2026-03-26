@@ -9,7 +9,7 @@ export function Breadcrumb({
 }: BreadcrumbProps) {
   return (
     <section
-      className="h-[500px] pt-[230px] bg-cover bg-no-repeat bg-top-center max-[479px]:pt-[180px]"
+      className="h-[320px] md:h-[500px] flex items-end justify-center pb-16 md:pb-24 bg-cover bg-no-repeat bg-top-center"
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       <div className="container mx-auto px-4">
