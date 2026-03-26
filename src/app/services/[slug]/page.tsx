@@ -55,7 +55,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                     {service.coach}
                   </strong>
                   {service.title.includes("Combat") &&
-                    " — founder of Soul MMA"}
+                    ", founder of Soul MMA"}
                 </p>
               )}
               {service.schedule && (
@@ -177,7 +177,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* CTA Section */}
       <section
         className="relative py-20 md:py-24 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/banner-bg.jpg')" }}
+        style={{ backgroundImage: "url('/images/banner-bg.avif')" }}
       >
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative max-w-[700px] mx-auto px-6 md:px-4 text-center">

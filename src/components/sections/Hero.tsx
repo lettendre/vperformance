@@ -5,7 +5,7 @@ export function Hero() {
     <section className="relative">
       <div
         className="h-screen min-h-[700px] flex items-center bg-cover bg-center bg-no-repeat max-md:text-center"
-        style={{ backgroundImage: "url('/images/hero/hero-1.jpg')" }}
+        style={{ backgroundImage: "url('/images/hero/hero-1.avif')" }}
       >
         <div className="container mx-auto px-4 relative z-[2]">
           <div className="flex justify-end">

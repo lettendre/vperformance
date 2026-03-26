@@ -15,11 +15,11 @@ export function Banner({
   buttonText,
   buttonHref,
   videoHref,
-  backgroundImage = "/images/banner-bg.jpg",
+  backgroundImage = "/images/banner-bg.avif",
 }: BannerProps) {
   return (
     <section
-      className="h-[550px] flex items-center justify-center bg-cover bg-no-repeat bg-top-center"
+      className="h-[350px] md:h-[550px] flex items-center justify-center bg-cover bg-no-repeat bg-center"
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       <div className="container mx-auto px-4">

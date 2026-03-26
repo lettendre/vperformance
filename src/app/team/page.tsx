@@ -7,7 +7,7 @@ import { teamPageMembers } from "@/data/content";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet the V Performance coaching team dedicated to functional fitness, corrective exercise, and performance training. Experienced professionals focused on personalized progress and real results.",
+    "Meet the V Performance coaching team dedicated to functional fitness, corrective exercise, and performance training. Experienced professionals focused on personalised progress and real results.",
   alternates: { canonical: "https://www.vperformance.lk/team" },
 };
 

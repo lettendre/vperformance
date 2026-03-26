@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | V Performance",
   },
   description:
-    "V Performance is a results-driven training system focused on functional movement, corrective exercise, and performance coaching. Build strength, move better, and achieve long-term health through personalized training in Colombo, Sri Lanka.",
+    "V Performance is a results-driven training system focused on functional movement, corrective exercise, and performance coaching. Build strength, move better, and achieve long-term health through personalised training in Colombo, Sri Lanka.",
   keywords: [
     "V Performance",
     "personal training Sri Lanka",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Results-driven training system focused on functional movement, corrective exercise, and performance coaching in Colombo, Sri Lanka.",
     images: [
       {
-        url: `${BASE_URL}/images/hero/hero-1.jpg`,
+        url: `${BASE_URL}/images/hero/hero-1.avif`,
         width: 1200,
         height: 630,
         alt: "V Performance Gym",
@@ -80,7 +80,7 @@ const jsonLd = {
   name: "V Performance",
   url: BASE_URL,
   logo: `${BASE_URL}/images/logo.png`,
-  image: `${BASE_URL}/images/hero/hero-1.jpg`,
+  image: `${BASE_URL}/images/hero/hero-1.avif`,
   description:
     "V Performance is a results-driven training system focused on functional movement, corrective exercise, and performance coaching in Colombo, Sri Lanka.",
   telephone: "+94 77 754 8505",

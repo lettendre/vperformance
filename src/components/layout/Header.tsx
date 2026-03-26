@@ -50,36 +50,52 @@ export function Header() {
       {/* Overlay */}
       <div
         className={cn(
-          "fixed inset-0 bg-black/70 z-[999] transition-all duration-300",
+          "fixed inset-0 bg-black/70 z-[10000] transition-all duration-300",
           mobileOpen ? "visible opacity-100" : "invisible opacity-0"
         )}
         onClick={() => setMobileOpen(false)}
       />
 
-      {/* Mobile drawer */}
+      {/* Mobile fullscreen menu */}
       <div
         className={cn(
-          "fixed top-0 w-[300px] z-[999] bg-[#111] h-full overflow-y-auto transition-all duration-500 p-[50px_30px_30px_30px] lg:hidden",
+          "fixed inset-0 z-[10001] bg-black/95 backdrop-blur-md flex flex-col items-center justify-center transition-all duration-400 lg:hidden",
           mobileOpen
-            ? "left-0 opacity-100 visible"
-            : "-left-[300px] opacity-0 invisible"
+            ? "opacity-100 visible"
+            : "opacity-0 invisible pointer-events-none"
         )}
       >
+        {/* Close button */}
         <button
-          className="absolute right-5 top-5 w-[30px] h-[30px] text-white text-[22px] leading-[27px] cursor-pointer"
+          className="absolute right-6 top-6 w-10 h-10 text-white/60 text-2xl hover:text-white transition-colors cursor-pointer"
           onClick={() => setMobileOpen(false)}
           aria-label="Close menu"
         >
           <i className="fa fa-close" />
         </button>
-        <nav className="mt-8">
-          <ul>
+
+        {/* Logo */}
+        <div className="absolute top-8 left-1/2 -translate-x-1/2">
+          <Link href="/" onClick={() => setMobileOpen(false)}>
+            <Image
+              src="/images/logo.png"
+              alt="V Performance"
+              width={120}
+              height={30}
+              className="h-[28px] w-auto"
+            />
+          </Link>
+        </div>
+
+        {/* Nav links */}
+        <nav>
+          <ul className="flex flex-col items-center gap-6">
             {navLinks.map((link) => (
-              <li key={link.href} className="border-b border-white/10">
+              <li key={link.href}>
                 <Link
                   href={link.href}
                   className={cn(
-                    "block py-3.5 text-white font-heading text-[15px] uppercase tracking-wide transition-colors hover:text-accent",
+                    "block text-white/80 font-heading text-xl uppercase tracking-[0.08em] transition-colors hover:text-accent",
                     isActive(link.href) && "text-accent"
                   )}
                 >
@@ -89,9 +105,11 @@ export function Header() {
             ))}
           </ul>
         </nav>
+
+        {/* CTA */}
         <Link
           href="/services"
-          className="block mt-8 bg-accent text-white text-center text-sm font-semibold uppercase tracking-[0.03em] py-3.5 px-6 hover:bg-accent-hover transition-colors"
+          className="mt-10 bg-accent text-white text-sm font-semibold uppercase tracking-[0.03em] py-3.5 px-10 hover:bg-accent-hover transition-colors"
         >
           View Services
         </Link>

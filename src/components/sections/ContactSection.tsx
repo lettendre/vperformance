@@ -15,7 +15,7 @@ export function ContactSection() {
               Let&apos;s Talk
             </h2>
             <p className="text-[#888] text-base mt-4 max-w-md mx-auto">
-              Ready to start training? Have a question? Reach out — we&apos;d love to hear from you.
+              Ready to start training? Have a question? Reach out, we&apos;d love to hear from you.
             </p>
           </div>
 

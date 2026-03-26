@@ -5,7 +5,7 @@ interface BreadcrumbProps {
 
 export function Breadcrumb({
   title,
-  backgroundImage = "/images/breadcrumb-bg.jpg",
+  backgroundImage = "/images/breadcrumb-bg.avif",
 }: BreadcrumbProps) {
   return (
     <section
