@@ -1,0 +1,11 @@
+/* TEAM */
+Design & Development: Deeesign
+Site: https://www.deeesignlab.com
+Location: Sri Lanka
+
+/* SITE */
+Last update: 2026
+Language: English
+Doctype: HTML5
+Framework: Next.js
+Client: V Performance — https://www.vperformance.lk

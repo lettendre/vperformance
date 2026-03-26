@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #4dacd6;
+  --color-accent-hover: #3d9cc6;
+  --color-dark-1: #000000;
+  --color-dark-2: #0a0a0a;
+  --color-dark-3: #151515;
+  --color-dark-4: #252525;
+  --color-dark-5: #363636;
+  --color-dark-6: #464646;
+  --color-text-light: #ffffff;
+  --color-text-muted: #c4c4c4;
+  --color-text-dim: #a9a9a9;
+  --color-star: #d49d09;
+  --color-popular: #0d6efd;
+
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Muli", sans-serif;
+}
+
+/* ===== Base Styles ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    background: var(--color-dark-1);
+    color: var(--color-text-dim);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-text-light);
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--color-text-dim);
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0 0 16px 0;
+    letter-spacing: 0;
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+  ul, ol {
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ===== Font Awesome 4.7 CDN loaded in layout ===== */
+
+/* ===== Skew pricing card ===== */
+.skew-card {
+  transform: skewY(-4deg);
+  transition: all 0.5s;
+}
+.skew-card:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+.skew-card:hover h3,
+.skew-card:hover .plan-price h2 {
+  color: #111111;
+}
+.skew-card:hover .plan-price span {
+  color: #444444;
+}
+.skew-card:hover li {
+  color: #111111;
+  font-weight: 600;
+}
+.skew-card:hover .pricing-btn {
+  background: var(--color-accent);
+}
+.unskew {
+  transform: skewY(4deg);
+}
+
+/* ===== Team card overlay ===== */
+.team-card-overlay {
+  padding: 40px 0 60px;
+  text-align: center;
+  background: var(--color-dark-2);
+  border-top: 4px solid var(--color-dark-6);
+  transform: skewY(-5deg);
+  position: absolute;
+  left: 0;
+  bottom: -250px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.team-card:hover .team-card-overlay {
+  bottom: -35px;
+}
+
+.team-card-overlay h4,
+.team-card-overlay span {
+  transform: skewY(5deg);
+}
+
+/* ===== Service card angled border ===== */
+.service-card-text::after {
+  position: absolute;
+  left: -5px;
+  top: -44px;
+  height: 100px;
+  width: 600px;
+  border-top: 4px solid var(--color-dark-6);
+  background: var(--color-dark-2);
+  content: "";
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+/* ===== Nav link underline effect ===== */
+.nav-link-effect::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: var(--color-accent);
+  content: "";
+  transform: rotate(-20deg);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.nav-link-effect:hover::after,
+.nav-link-effect.active::after {
+  opacity: 1;
+}
+
+/* ===== Services page arrow ===== */
+.ss-arrow::after {
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  background: var(--color-dark-4);
+  content: "";
+  transform: rotate(45deg) translateY(-10px);
+  z-index: -1;
+  transition: all 0.2s;
+}
+.ss-arrow:hover::after {
+  background: #363636;
+}
+.ss-arrow-right::after {
+  left: auto;
+  right: 0;
+}
+
+/* ===== Preloader ===== */
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    border: 4px solid #f44336;
+    border-left-color: transparent;
+  }
+  50% {
+    transform: rotate(180deg);
+    border: 4px solid #673ab7;
+    border-left-color: transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+    border: 4px solid #f44336;
+    border-left-color: transparent;
+  }
+}
+
+/* ===== Gallery masonry ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.gallery-grid .gallery-wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 991px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid .gallery-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid .gallery-wide {
+    grid-column: span 1;
+  }
+}
