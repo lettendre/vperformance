@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Play } from "lucide-react";
 
 export function AboutText() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -36,7 +37,7 @@ export function AboutText() {
               className="absolute inset-0 flex items-center justify-center bg-black/40 transition-colors hover:bg-black/30"
             >
               <span className="inline-flex h-[70px] w-[70px] items-center justify-center bg-accent rounded-full text-4xl text-white hover:scale-110 transition-transform">
-                <i className="fa fa-caret-right" />
+                <Play size={28} className="ml-1" />
               </span>
             </button>
           )}

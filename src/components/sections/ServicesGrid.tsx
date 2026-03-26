@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { servicesPageItems } from "@/data/content";
 
@@ -24,7 +25,7 @@ export function ServicesGrid() {
                   </p>
                 </div>
                 <span className="text-text-dim text-xl group-hover:text-accent group-hover:translate-x-1 transition-all duration-300 shrink-0">
-                  <i className="fa fa-chevron-right" />
+                  <ChevronRight size={20} />
                 </span>
               </div>
             </Link>

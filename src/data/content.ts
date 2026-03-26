@@ -23,7 +23,7 @@ export const socialLinks: SocialLink[] = [
   {
     platform: "instagram",
     href: "https://www.instagram.com/vperformance3/",
-    icon: "fa-instagram",
+    icon: "instagram",
   },
 ];
 
@@ -31,12 +31,12 @@ export const footerSocialLinks: SocialLink[] = [
   {
     platform: "instagram",
     href: "https://www.instagram.com/vperformance3/",
-    icon: "fa-instagram",
+    icon: "instagram",
   },
   {
     platform: "email",
     href: "mailto:info@vperformance.lk",
-    icon: "fa-envelope-o",
+    icon: "mail",
   },
 ];
 
@@ -351,8 +351,8 @@ export const teamPageMembers: TeamMember[] = [
     role: "Gym Trainer",
     image: "/images/team/team-1.avif",
     socials: [
-      { platform: "instagram", href: "#", icon: "fa-instagram" },
-      { platform: "email", href: "#", icon: "fa-envelope-o" },
+      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
@@ -360,8 +360,8 @@ export const teamPageMembers: TeamMember[] = [
     role: "Gym Trainer",
     image: "/images/team/team-2.avif",
     socials: [
-      { platform: "instagram", href: "#", icon: "fa-instagram" },
-      { platform: "email", href: "#", icon: "fa-envelope-o" },
+      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
@@ -369,8 +369,8 @@ export const teamPageMembers: TeamMember[] = [
     role: "Gym Trainer",
     image: "/images/team/team-3.avif",
     socials: [
-      { platform: "instagram", href: "#", icon: "fa-instagram" },
-      { platform: "email", href: "#", icon: "fa-envelope-o" },
+      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
@@ -378,8 +378,8 @@ export const teamPageMembers: TeamMember[] = [
     role: "Gym Trainer",
     image: "/images/team/team-4.avif",
     socials: [
-      { platform: "instagram", href: "#", icon: "fa-instagram" },
-      { platform: "email", href: "#", icon: "fa-envelope-o" },
+      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
@@ -387,8 +387,8 @@ export const teamPageMembers: TeamMember[] = [
     role: "Gym Trainer",
     image: "/images/team/team-5.avif",
     socials: [
-      { platform: "instagram", href: "#", icon: "fa-instagram" },
-      { platform: "email", href: "#", icon: "fa-envelope-o" },
+      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
@@ -396,8 +396,8 @@ export const teamPageMembers: TeamMember[] = [
     role: "Gym Trainer",
     image: "/images/team/team-6.avif",
     socials: [
-      { platform: "instagram", href: "#", icon: "fa-instagram" },
-      { platform: "email", href: "#", icon: "fa-envelope-o" },
+      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "email", href: "#", icon: "mail" },
     ],
   },
 ];
@@ -426,25 +426,25 @@ export const galleryImages: GalleryImage[] = [
 
 export const chooseUsItems: ChooseUsItem[] = [
   {
-    icon: "fa fa-bicycle",
+    icon: "bicycle",
     title: "Modern Equipment",
     description:
       "State-of-the-art training tools designed to support functional movement, performance, and safe progression.",
   },
   {
-    icon: "fa fa-leaf",
+    icon: "leaf",
     title: "Customised Nutrition Plans",
     description:
       "Personalised nutrition guidance aligned with your goals, lifestyle, and long-term health.",
   },
   {
-    icon: "fa fa-trophy",
+    icon: "trophy",
     title: "Professional Training",
     description:
       "Structured coaching built on proven methods, precision programming, and real results.",
   },
   {
-    icon: "fa fa-heartbeat",
+    icon: "heartbeat",
     title: "Unique to Your Needs",
     description:
       "As a truly Sri Lankan fitness brand, we design training approaches that match our culture, lifestyles, and goals.",

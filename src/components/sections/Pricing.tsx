@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { pricingPlans } from "@/data/content";
 
@@ -60,7 +61,7 @@ export function Pricing() {
                     key={i}
                     className="flex items-start gap-2.5 text-[14px] text-[#aaa] list-none leading-snug"
                   >
-                    <i className="fa fa-check text-accent text-[10px] mt-1 shrink-0" />
+                    <Check size={12} className="text-accent mt-1 shrink-0" />
                     {feature}
                   </li>
                 ))}

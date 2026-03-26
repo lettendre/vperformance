@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Button } from "@/components/ui/Button";
 import { homeServices } from "@/data/content";
@@ -75,7 +76,7 @@ export function Services() {
               className="h-10 w-10 border border-white/10 text-white/60 flex items-center justify-center text-lg hover:border-accent hover:text-accent transition-colors disabled:opacity-20 disabled:cursor-default"
               aria-label="Previous"
             >
-              <i className="fa fa-chevron-left" />
+              <ChevronLeft size={18} />
             </button>
             <button
               onClick={() => scroll("right")}
@@ -83,7 +84,7 @@ export function Services() {
               className="h-10 w-10 border border-white/10 text-white/60 flex items-center justify-center text-lg hover:border-accent hover:text-accent transition-colors disabled:opacity-20 disabled:cursor-default"
               aria-label="Next"
             >
-              <i className="fa fa-chevron-right" />
+              <ChevronRight size={18} />
             </button>
           </div>
         </div>

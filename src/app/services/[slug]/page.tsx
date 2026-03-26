@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { Check } from "lucide-react";
 import { Breadcrumb } from "@/components/sections/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { servicesPageItems } from "@/data/content";
@@ -85,7 +86,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                         key={i}
                         className="flex items-start gap-3 text-[15px] text-[#bbb] leading-relaxed"
                       >
-                        <i className="fa fa-check text-accent text-xs mt-1.5 shrink-0" />
+                        <Check size={14} className="text-accent mt-1.5 shrink-0" />
                         <span>{benefit}</span>
                       </li>
                     ))}

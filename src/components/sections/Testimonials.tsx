@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { testimonials } from "@/data/content";
 
@@ -33,14 +34,14 @@ export function Testimonials() {
             className="absolute left-0 top-1/2 -translate-y-1/2 h-[46px] w-[46px] text-text-dim bg-white/10 text-2xl hover:bg-accent hover:text-white transition-colors z-10 hidden md:block"
             aria-label="Previous testimonial"
           >
-            <i className="fa fa-angle-left" />
+            <ChevronLeft size={24} />
           </button>
           <button
             onClick={next}
             className="absolute right-0 top-1/2 -translate-y-1/2 h-[46px] w-[46px] text-text-dim bg-white/10 text-2xl hover:bg-accent hover:text-white transition-colors z-10 hidden md:block"
             aria-label="Next testimonial"
           >
-            <i className="fa fa-angle-right" />
+            <ChevronRight size={24} />
           </button>
 
           <div className="text-center px-16">
@@ -52,7 +53,7 @@ export function Testimonials() {
             </p>
             <div className="flex justify-center gap-1">
               {Array.from({ length: item.rating }).map((_, i) => (
-                <i key={i} className="fa fa-star text-xs text-star" />
+                <Star key={i} size={12} className="text-star fill-star" />
               ))}
             </div>
           </div>

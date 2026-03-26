@@ -1,3 +1,4 @@
+import { MapPin, Phone, Mail } from "lucide-react";
 import { contactInfo, mapEmbedUrl } from "@/data/content";
 
 export function ContactSection() {
@@ -29,7 +30,7 @@ export function ContactSection() {
               className="group bg-dark-2 border border-white/5 rounded-lg p-8 text-center transition-all duration-300 hover:border-accent/30 hover:bg-[#111]"
             >
               <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-accent/10 text-accent text-xl mb-5 group-hover:bg-accent group-hover:text-white transition-all duration-300">
-                <i className="fa fa-map-marker" />
+                <MapPin size={20} />
               </div>
               <h3 className="text-white text-base font-semibold mb-2">Visit Us</h3>
               <p className="text-[#9ca3af] text-sm leading-relaxed mb-0">
@@ -45,7 +46,7 @@ export function ContactSection() {
               className="group bg-dark-2 border border-white/5 rounded-lg p-8 text-center transition-all duration-300 hover:border-accent/30 hover:bg-[#111]"
             >
               <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-accent/10 text-accent text-xl mb-5 group-hover:bg-accent group-hover:text-white transition-all duration-300">
-                <i className="fa fa-phone" />
+                <Phone size={20} />
               </div>
               <h3 className="text-white text-base font-semibold mb-2">Call Us</h3>
               <p className="text-[#9ca3af] text-sm mb-0">
@@ -59,7 +60,7 @@ export function ContactSection() {
               className="group bg-dark-2 border border-white/5 rounded-lg p-8 text-center transition-all duration-300 hover:border-accent/30 hover:bg-[#111]"
             >
               <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-accent/10 text-accent text-xl mb-5 group-hover:bg-accent group-hover:text-white transition-all duration-300">
-                <i className="fa fa-envelope-o" />
+                <Mail size={20} />
               </div>
               <h3 className="text-white text-base font-semibold mb-2">Email Us</h3>
               <p className="text-[#9ca3af] text-sm mb-0">

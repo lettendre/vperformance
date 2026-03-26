@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { X, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/data/content";
 
@@ -71,7 +72,7 @@ export function Header() {
           onClick={() => setMobileOpen(false)}
           aria-label="Close menu"
         >
-          <i className="fa fa-close" />
+          <X size={24} />
         </button>
 
         {/* Logo */}
@@ -181,7 +182,7 @@ export function Header() {
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
-            <i className="fa fa-bars" />
+            <Menu size={22} />
           </button>
         </div>
       </header>

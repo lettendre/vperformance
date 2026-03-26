@@ -1,3 +1,4 @@
+import { Play } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 interface BannerProps {
@@ -44,7 +45,7 @@ export function Banner({
               rel="noopener noreferrer"
               className="inline-block h-[70px] w-[70px] bg-accent rounded-full leading-[70px] text-center text-4xl text-white"
             >
-              <i className="fa fa-caret-right" />
+              <Play size={28} className="ml-1" />
             </a>
           )}
         </div>

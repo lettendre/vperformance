@@ -1,4 +1,12 @@
+import { Bike, Leaf, Trophy, HeartPulse, type LucideIcon } from "lucide-react";
 import { chooseUsItems } from "@/data/content";
+
+const iconMap: Record<string, LucideIcon> = {
+  bicycle: Bike,
+  leaf: Leaf,
+  trophy: Trophy,
+  heartbeat: HeartPulse,
+};
 
 export function WhyChooseUs() {
   return (
@@ -21,7 +29,7 @@ export function WhyChooseUs() {
               className="group bg-dark-3 border border-white/5 rounded-lg p-8 text-center transition-all duration-300 hover:border-accent/20 hover:bg-[#1a1a1a]"
             >
               <span className="inline-flex items-center justify-center h-16 w-16 bg-accent/10 rounded-full text-accent text-2xl transition-all duration-300 group-hover:bg-accent group-hover:text-white mb-6">
-                <i className={item.icon} />
+                {(() => { const Icon = iconMap[item.icon]; return Icon ? <Icon size={28} /> : null; })()}
               </span>
               <h3 className="text-white text-lg font-semibold mb-3">
                 {item.title}
