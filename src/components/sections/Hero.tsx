@@ -40,6 +40,7 @@ export function Hero() {
                   width={800}
                   height={900}
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                   className="w-full h-[400px] md:h-[520px] lg:h-[600px] object-cover rounded-lg"
                   priority
                   fetchPriority="high"

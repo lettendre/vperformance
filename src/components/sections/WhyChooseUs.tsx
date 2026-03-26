@@ -26,7 +26,7 @@ export function WhyChooseUs() {
               <h3 className="text-white text-lg font-semibold mb-3">
                 {item.title}
               </h3>
-              <p className="text-[#888] text-[15px] leading-relaxed mb-0">
+              <p className="text-[#9ca3af] text-[15px] leading-relaxed mb-0">
                 {item.description}
               </p>
             </div>

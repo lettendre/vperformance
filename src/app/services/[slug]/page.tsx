@@ -161,7 +161,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                       <li key={s.slug}>
                         <Link
                           href={`/services/${s.slug}`}
-                          className="text-[#888] text-[15px] hover:text-accent transition-colors"
+                          className="text-[#9ca3af] text-[15px] hover:text-accent transition-colors"
                         >
                           {s.title}
                         </Link>

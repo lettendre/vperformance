@@ -17,9 +17,10 @@ export function Certifications() {
                 <Image
                   src={cert.image}
                   alt={cert.title}
-                  width={120}
-                  height={80}
-                  sizes="120px"
+                  width={140}
+                  height={140}
+                  sizes="140px"
+                  quality={75}
                   className="max-h-[80px] w-auto mx-auto object-contain"
                 />
               </div>

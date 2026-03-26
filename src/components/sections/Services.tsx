@@ -117,7 +117,7 @@ export function Services() {
                 <h3 className="text-base md:text-lg text-white font-semibold uppercase mb-1.5 group-hover:text-accent transition-colors">
                   {service.title}
                 </h3>
-                <span className="text-[#888] text-[14px] leading-relaxed">
+                <span className="text-[#9ca3af] text-[14px] leading-relaxed">
                   {service.description}
                 </span>
               </div>

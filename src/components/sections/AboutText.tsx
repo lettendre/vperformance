@@ -87,7 +87,7 @@ export function AboutText() {
               <p className="text-accent text-[36px] md:text-[44px] font-bold leading-none tracking-tight mb-2">
                 {stat.number}
               </p>
-              <p className="text-[#666] text-sm uppercase tracking-wide mb-0">
+              <p className="text-[#9ca3af] text-sm uppercase tracking-wide mb-0">
                 {stat.label}
               </p>
             </div>

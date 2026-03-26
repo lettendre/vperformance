@@ -220,6 +220,7 @@ export default function RootLayout({
           as="image"
           href="/images/hero/hero-1.avif"
           fetchPriority="high"
+          type="image/avif"
         />
         <link rel="author" href="https://www.deeesignlab.com" />
         <link rel="author" type="text/plain" href="/humans.txt" />

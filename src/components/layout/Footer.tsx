@@ -92,7 +92,8 @@ export function Footer() {
                 alt="V Performance"
                 width={140}
                 height={35}
-                sizes="140px"
+                sizes="(max-width: 640px) 100px, 140px"
+                quality={85}
                 className="h-[32px] w-auto mb-4"
               />
             </Link>
@@ -154,16 +155,16 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/5 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-[#888] text-xs tracking-wide text-center sm:text-left">
+          <p className="text-[#9ca3af] text-xs tracking-wide text-center sm:text-left">
             &copy; {year} V Performance. All rights reserved.
           </p>
-          <p className="text-[#888] text-xs tracking-wide">
+          <p className="text-[#9ca3af] text-xs tracking-wide">
             Made with Intention by{" "}
             <a
               href="https://www.deeesignlab.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent hover:text-white transition-colors"
+              className="text-[#4db8e0] hover:text-white transition-colors"
             >
               Deeesign
             </a>
@@ -178,7 +179,7 @@ function VisitUsContent() {
   return (
     <div className="space-y-4">
       {/* Address */}
-      <p className="text-[#888] text-[13px] leading-relaxed">
+      <p className="text-[#9ca3af] text-[13px] leading-relaxed">
         2 Andarewatta Rd,
         <br />
         Colombo 00600, Sri Lanka
@@ -200,7 +201,7 @@ function VisitUsContent() {
         <p className="mb-1">
           <span className="text-[#ccc]">Afternoon:</span> 3:30 PM – 7:30 PM
         </p>
-        <p className="text-[#888] text-[11px] uppercase tracking-wide mt-2 mb-0">
+        <p className="text-[#9ca3af] text-[11px] uppercase tracking-wide mt-2 mb-0">
           Open 7 days a week
         </p>
       </div>

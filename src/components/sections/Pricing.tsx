@@ -13,7 +13,7 @@ export function Pricing() {
           <h2 className="text-white text-[28px] md:text-[38px] font-bold uppercase mt-3 tracking-tight">
             Invest In Your Health
           </h2>
-          <p className="text-[#888] text-base mt-4 max-w-md mx-auto">
+          <p className="text-[#9ca3af] text-base mt-4 max-w-md mx-auto">
             Transparent pricing. No hidden fees. Every plan starts with an assessment.
           </p>
         </div>
@@ -30,7 +30,7 @@ export function Pricing() {
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-[11px] font-semibold uppercase tracking-[0.1em] px-4 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1a6e8e] text-white text-[11px] font-semibold uppercase tracking-[0.1em] px-4 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
@@ -45,7 +45,7 @@ export function Pricing() {
                 <p className="text-accent text-[36px] font-bold leading-none tracking-tight mb-1">
                   {plan.price}
                 </p>
-                <p className="text-[#666] text-sm mb-0">
+                <p className="text-[#9ca3af] text-sm mb-0">
                   {plan.period}
                 </p>
               </div>

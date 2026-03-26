@@ -14,7 +14,7 @@ export function ContactSection() {
             <h2 className="text-white text-[28px] md:text-[38px] font-bold uppercase mt-3 tracking-tight">
               Let&apos;s Talk
             </h2>
-            <p className="text-[#888] text-base mt-4 max-w-md mx-auto">
+            <p className="text-[#9ca3af] text-base mt-4 max-w-md mx-auto">
               Ready to start training? Have a question? Reach out, we&apos;d love to hear from you.
             </p>
           </div>
@@ -32,7 +32,7 @@ export function ContactSection() {
                 <i className="fa fa-map-marker" />
               </div>
               <h3 className="text-white text-base font-semibold mb-2">Visit Us</h3>
-              <p className="text-[#888] text-sm leading-relaxed mb-0">
+              <p className="text-[#9ca3af] text-sm leading-relaxed mb-0">
                 2 Andarewatta Rd,
                 <br />
                 Colombo 00600, Sri Lanka
@@ -48,7 +48,7 @@ export function ContactSection() {
                 <i className="fa fa-phone" />
               </div>
               <h3 className="text-white text-base font-semibold mb-2">Call Us</h3>
-              <p className="text-[#888] text-sm mb-0">
+              <p className="text-[#9ca3af] text-sm mb-0">
                 {contactInfo.phones[0].display}
               </p>
             </a>
@@ -62,7 +62,7 @@ export function ContactSection() {
                 <i className="fa fa-envelope-o" />
               </div>
               <h3 className="text-white text-base font-semibold mb-2">Email Us</h3>
-              <p className="text-[#888] text-sm mb-0">
+              <p className="text-[#9ca3af] text-sm mb-0">
                 {contactInfo.email}
               </p>
             </a>
@@ -70,7 +70,7 @@ export function ContactSection() {
 
           {/* Hours */}
           <div className="text-center mt-12">
-            <p className="text-[#666] text-sm">
+            <p className="text-[#9ca3af] text-sm">
               <span className="text-[#999]">Morning:</span> 5:30 AM – 12:30 PM
               <span className="mx-3 text-white/10">|</span>
               <span className="text-[#999]">Afternoon:</span> 3:30 PM – 7:30 PM
