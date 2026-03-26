@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Oswald, Mulish } from "next/font/google";
 import { Layout } from "@/components/layout/Layout";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -224,6 +225,7 @@ export default function RootLayout({
       <body className={muli.className}>
         {/* <!-- Designed and developed by Deeesign — https://www.deeesignlab.com --> */}
         <Layout>{children}</Layout>
+        <Analytics/>
         <Script
           id="json-ld"
           type="application/ld+json"
