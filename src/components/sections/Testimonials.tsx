@@ -47,9 +47,9 @@ export function Testimonials() {
             <p className="text-white text-base tracking-wide mb-6 leading-[1.75] max-w-[65ch] mx-auto">
               {item.text}
             </p>
-            <h5 className="text-white font-semibold uppercase mb-2 font-heading text-lg">
+            <p className="text-white font-semibold uppercase mb-2 font-heading text-lg">
               {item.name}
-            </h5>
+            </p>
             <div className="flex justify-center gap-1">
               {Array.from({ length: item.rating }).map((_, i) => (
                 <i key={i} className="fa fa-star text-xs text-star" />

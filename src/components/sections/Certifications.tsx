@@ -19,12 +19,13 @@ export function Certifications() {
                   alt={cert.title}
                   width={120}
                   height={80}
+                  sizes="120px"
                   className="max-h-[80px] w-auto mx-auto object-contain"
                 />
               </div>
-              <h4 className="text-white text-lg font-semibold mb-3">
+              <h3 className="text-white text-lg font-semibold mb-3">
                 {cert.title}
-              </h4>
+              </h3>
               <p className="text-text-dim text-[15px] leading-relaxed mb-0">{cert.description}</p>
             </div>
           ))}

@@ -39,8 +39,10 @@ export function Hero() {
                   alt="V Performance Training"
                   width={800}
                   height={900}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-[400px] md:h-[520px] lg:h-[600px] object-cover rounded-lg"
                   priority
+                  fetchPriority="high"
                 />
                 {/* Accent border detail */}
                 <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent/20 rounded-lg -z-10 hidden md:block" />

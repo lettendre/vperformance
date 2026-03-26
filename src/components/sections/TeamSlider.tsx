@@ -92,9 +92,9 @@ export function TeamSlider({ members, showButton = true }: TeamSliderProps) {
               style={{ backgroundImage: `url('${member.image}')` }}
             >
               <div className="team-card-overlay">
-                <h4 className="text-white text-lg font-semibold mb-3 block">
+                <h3 className="text-white text-lg font-semibold mb-3 block">
                   {member.name}
-                </h4>
+                </h3>
                 <span className="block text-[11px] font-semibold text-[#aaa] uppercase tracking-[0.12em]">
                   {member.role}
                 </span>

@@ -82,6 +82,7 @@ export function Header() {
               alt="V Performance"
               width={120}
               height={30}
+              sizes="120px"
               className="h-[28px] w-auto"
             />
           </Link>
@@ -134,6 +135,7 @@ export function Header() {
                 alt="V Performance"
                 width={140}
                 height={35}
+                sizes="140px"
                 className="h-[32px] w-auto"
                 priority
               />

@@ -109,13 +109,14 @@ export function Services() {
                   alt={service.title}
                   width={600}
                   height={400}
+                  sizes="(max-width: 640px) 280px, 340px"
                   className="w-full h-[200px] md:h-[220px] object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="bg-dark-2 p-5 flex-1 flex flex-col transition-colors duration-300 group-hover:bg-[#111]">
-                <h5 className="text-base md:text-lg text-white font-semibold uppercase mb-1.5 group-hover:text-accent transition-colors">
+                <h3 className="text-base md:text-lg text-white font-semibold uppercase mb-1.5 group-hover:text-accent transition-colors">
                   {service.title}
-                </h5>
+                </h3>
                 <span className="text-[#888] text-[14px] leading-relaxed">
                   {service.description}
                 </span>

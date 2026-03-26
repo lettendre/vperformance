@@ -39,9 +39,9 @@ function FooterAccordion({
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-3"
       >
-        <h6 className="text-accent text-[11px] font-semibold uppercase tracking-[0.15em]">
+        <span className="text-accent text-[11px] font-semibold uppercase tracking-[0.15em] font-heading">
           {title}
-        </h6>
+        </span>
         <i
           className={`fa fa-chevron-down text-text-dim text-xs transition-transform duration-300 ${
             open ? "rotate-180" : ""
@@ -92,6 +92,7 @@ export function Footer() {
                 alt="V Performance"
                 width={140}
                 height={35}
+                sizes="140px"
                 className="h-[32px] w-auto mb-4"
               />
             </Link>
@@ -113,9 +114,9 @@ export function Footer() {
 
           {/* Column 2 — Training (desktop/tablet) */}
           <div className="hidden sm:block lg:col-span-3">
-            <h6 className="text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5">
+            <span className="block text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5 font-heading">
               Training
-            </h6>
+            </span>
             {linkList(trainingLinks)}
           </div>
 
@@ -126,9 +127,9 @@ export function Footer() {
 
           {/* Column 3 — Company (desktop/tablet) */}
           <div className="hidden sm:block lg:col-span-2">
-            <h6 className="text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5">
+            <span className="block text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5 font-heading">
               Company
-            </h6>
+            </span>
             {linkList(companyLinks)}
           </div>
 
@@ -139,9 +140,9 @@ export function Footer() {
 
           {/* Column 4 — Visit Us (desktop/tablet) */}
           <div className="hidden sm:block lg:col-span-4">
-            <h6 className="text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5">
+            <span className="block text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5 font-heading">
               Visit Us
-            </h6>
+            </span>
             <VisitUsContent />
           </div>
 

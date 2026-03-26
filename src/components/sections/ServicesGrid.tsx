@@ -16,9 +16,9 @@ export function ServicesGrid() {
             >
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <h4 className="text-xl md:text-[22px] text-white font-semibold uppercase mb-1">
+                  <h3 className="text-xl md:text-[22px] text-white font-semibold uppercase mb-1">
                     {item.title}
-                  </h4>
+                  </h3>
                   <p className="text-accent text-[15px] font-semibold uppercase tracking-wide">
                     {item.tagline}
                   </p>

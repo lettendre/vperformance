@@ -216,8 +216,10 @@ export default function RootLayout({
     <html lang="en" className={`${oswald.variable} ${muli.variable}`}>
       <head>
         <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="preload"
+          as="image"
+          href="/images/hero/hero-1.avif"
+          fetchPriority="high"
         />
         <link rel="author" href="https://www.deeesignlab.com" />
         <link rel="author" type="text/plain" href="/humans.txt" />

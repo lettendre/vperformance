@@ -23,9 +23,9 @@ export function WhyChooseUs() {
               <span className="inline-flex items-center justify-center h-16 w-16 bg-accent/10 rounded-full text-accent text-2xl transition-all duration-300 group-hover:bg-accent group-hover:text-white mb-6">
                 <i className={item.icon} />
               </span>
-              <h4 className="text-white text-lg font-semibold mb-3">
+              <h3 className="text-white text-lg font-semibold mb-3">
                 {item.title}
-              </h4>
+              </h3>
               <p className="text-[#888] text-[15px] leading-relaxed mb-0">
                 {item.description}
               </p>
