@@ -139,7 +139,7 @@ const jsonLd = {
   },
   offerCatalog: {
     "@type": "OfferCatalog",
-    name: "Training Services",
+    name: "Training Memberships",
     itemListElement: [
       {
         "@type": "Offer",

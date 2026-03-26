@@ -153,7 +153,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <div className="md:w-[25%]">
               <div className="md:sticky md:top-24 md:max-h-[calc(100vh-8rem)] md:overflow-y-auto">
                 <h3 className="text-white pb-5 text-lg font-semibold uppercase tracking-wide mb-5">
-                  Other Services
+                  Other Memberships
                 </h3>
                 <ul className="flex flex-col gap-3">
                   {servicesPageItems
@@ -196,13 +196,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             >
               {service.ctaText || "Get Started"}
             </Button>
-            <Button
-              variant="outline"
-              href="/services"
-              className="w-full sm:w-auto px-9 py-4 text-sm"
-            >
-              View All Services
-            </Button>
+
           </div>
         </div>
       </section>

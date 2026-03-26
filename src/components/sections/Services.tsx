@@ -62,13 +62,13 @@ export function Services() {
         {/* Header row */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
-            <SectionTitle subtitle="Our Services" title="WHAT WE OFFER" align="left" className="mb-0">
+            <SectionTitle subtitle="Our Memberships" title="WHAT WE OFFER" align="left" className="mb-0">
               <span className="inline-block pt-3 text-[15px] text-accent font-semibold uppercase tracking-wide">
                 Not trends. A proven system.
               </span>
             </SectionTitle>
           </div>
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="hidden sm:flex items-center gap-3 shrink-0">
             {/* Arrows */}
             <button
               onClick={() => scroll("left")}
@@ -129,7 +129,7 @@ export function Services() {
         {/* CTA */}
         <div className="mt-10 text-center">
           <Button variant="outline" href="/services">
-            View All Services
+            View All Memberships
           </Button>
         </div>
       </div>

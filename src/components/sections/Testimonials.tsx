@@ -31,14 +31,14 @@ export function Testimonials() {
           {/* Nav arrows */}
           <button
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 h-[46px] w-[46px] text-text-dim bg-white/10 text-2xl hover:bg-accent hover:text-white transition-colors z-10 hidden md:block"
+            className="absolute left-0 top-1/2 -translate-y-1/2 h-[46px] w-[46px] flex items-center justify-center text-text-dim bg-white/10 text-2xl hover:bg-accent hover:text-white transition-colors z-10 hidden md:flex"
             aria-label="Previous testimonial"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 h-[46px] w-[46px] text-text-dim bg-white/10 text-2xl hover:bg-accent hover:text-white transition-colors z-10 hidden md:block"
+            className="absolute right-0 top-1/2 -translate-y-1/2 h-[46px] w-[46px] flex items-center justify-center text-text-dim bg-white/10 text-2xl hover:bg-accent hover:text-white transition-colors z-10 hidden md:flex"
             aria-label="Next testimonial"
           >
             <ChevronRight size={24} />

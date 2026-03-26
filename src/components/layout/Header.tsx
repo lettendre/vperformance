@@ -91,7 +91,7 @@ export function Header() {
 
         {/* Nav links */}
         <nav>
-          <ul className="flex flex-col items-center gap-6">
+          <ul className="flex flex-col items-center gap-15">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -111,9 +111,9 @@ export function Header() {
         {/* CTA */}
         <Link
           href="/services"
-          className="mt-10 bg-accent text-white text-sm font-semibold uppercase tracking-[0.03em] py-3.5 px-10 hover:bg-accent-hover transition-colors"
+          className="mt-18 bg-accent text-white text-sm font-semibold uppercase tracking-[0.03em] py-3.5 px-10 hover:bg-accent-hover transition-colors"
         >
-          View Services
+          Train With Us
         </Link>
       </div>
 
@@ -123,7 +123,7 @@ export function Header() {
           "fixed left-0 top-0 w-full px-[15px] py-5 z-[9999] transition-all duration-300",
           scrolled
             ? "bg-black/90 backdrop-blur-sm"
-            : "pt-[55px]",
+            : "lg:pt-[55px]",
           hidden && scrolled && "-translate-y-[120%]"
         )}
       >
@@ -172,7 +172,7 @@ export function Header() {
               href="/services"
               className="bg-accent text-white text-[13px] font-semibold uppercase tracking-[0.04em] px-6 py-2.5 hover:bg-accent-hover transition-colors"
             >
-              View Services
+              Train With Us
             </Link>
           </div>
 

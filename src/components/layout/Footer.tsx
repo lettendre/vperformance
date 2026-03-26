@@ -17,7 +17,6 @@ const trainingLinks = [
 const navigationLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
   { label: "Our Team", href: "/team" },
   { label: "Contact", href: "/contact" },
 ];
@@ -28,7 +27,7 @@ export function Footer() {
   const linkList = (
     links: { label: string; href: string }[],
   ) => (
-    <ul className="flex flex-col gap-2.5">
+    <ul className="flex flex-col gap-4 sm:gap-2.5">
       {links.map((link) => (
         <li key={link.href}>
           <Link
@@ -46,9 +45,9 @@ export function Footer() {
     <footer className="bg-[#0a0a0a] border-t border-accent/20">
       <div className="container mx-auto px-6 sm:px-4">
         {/* Main grid */}
-        <div className="pt-20 pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+        <div className="pt-20 pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Column 1 — Brand */}
-          <div className="sm:col-span-2 lg:col-span-3 flex flex-col items-center sm:items-start">
+          <div className="sm:col-span-2 lg:col-span-1 flex flex-col items-center sm:items-start">
             <Link href="/">
               <Image
                 src="/images/logo.png"
@@ -77,7 +76,7 @@ export function Footer() {
           </div>
 
           {/* Column 2 — Training (desktop/tablet) */}
-          <div className="hidden sm:block lg:col-span-3">
+          <div className="hidden sm:block lg:col-span-1">
             <span className="block text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5 font-heading">
               Training
             </span>
@@ -86,7 +85,7 @@ export function Footer() {
 
 
           {/* Column 3 — Navigation (desktop/tablet) */}
-          <div className="hidden sm:block lg:col-span-2">
+          <div className="hidden sm:block lg:col-span-1">
             <span className="block text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5 font-heading">
               Navigation
             </span>
@@ -102,7 +101,7 @@ export function Footer() {
           </div>
 
           {/* Column 4 — Visit Us (desktop/tablet) */}
-          <div className="hidden sm:block lg:col-span-4">
+          <div className="hidden sm:block lg:col-span-1">
             <span className="block text-accent text-[11px] font-semibold uppercase tracking-[0.15em] mb-5 font-heading">
               Visit Us
             </span>
@@ -120,10 +119,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/5 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-[#9ca3af] text-xs tracking-wide text-center sm:text-left">
+          <p className="text-[#9ca3af] text-[13px] tracking-wide text-center sm:text-left">
             &copy; {year} V Performance. All rights reserved.
           </p>
-          <p className="text-[#9ca3af] text-xs tracking-wide">
+          <p className="text-[#9ca3af] text-[13px] tracking-wide">
             Made with Intention by{" "}
             <a
               href="https://www.deeesignlab.com"
@@ -159,14 +158,14 @@ function VisitUsContent() {
       </a>
 
       {/* Hours */}
-      <div className="text-[#aaa] text-[13px] leading-relaxed">
-        <p className="mb-1">
+      <div className="text-[#aaa] text-[13px]">
+        <p className="mb-1 text-[13px]">
           <span className="text-[#ccc]">Morning:</span> 5:30 AM – 12:30 PM
         </p>
-        <p className="mb-1">
+        <p className="mb-1 text-[13px]">
           <span className="text-[#ccc]">Afternoon:</span> 3:30 PM – 7:30 PM
         </p>
-        <p className="text-[#9ca3af] text-[11px] uppercase tracking-wide mt-2 mb-0">
+        <p className="text-[#9ca3af] text-[13px] uppercase tracking-wide mt-2 mb-0">
           Open 7 days a week
         </p>
       </div>

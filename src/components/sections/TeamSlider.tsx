@@ -73,8 +73,8 @@ export function TeamSlider({ members, showButton = true }: TeamSliderProps) {
             className="mb-0"
           />
           {showButton && (
-            <Button variant="outline" href="/contact" className="mt-4 sm:mt-0">
-              Get in Touch
+            <Button variant="outline" href="/team" className="mt-4 sm:mt-0">
+              Know the Team
             </Button>
           )}
         </div>

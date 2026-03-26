@@ -14,7 +14,6 @@ import type {
 export const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
   { label: "Our Team", href: "/team" },
   { label: "Contact", href: "/contact" },
 ];
@@ -404,13 +403,8 @@ export const teamPageMembers: TeamMember[] = [
 
 export const testimonials: TestimonialItem[] = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    name: "Marshmello Gomez",
-    rating: 5,
-  },
-  {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    name: "Marshmello Gomez",
+    text: "When I first joined V Performance I was sceptical as I had severe lower back pain and could barely move. After consulting with Ashan he took his time to create a personalised workout plan and guided me through the workouts along with the other personal trainers. After 2 months of training I went from having difficulty walking to doing 2 minute planks with 20kg on my back!",
+    name: "Clive Shalindra",
     rating: 5,
   },
 ];

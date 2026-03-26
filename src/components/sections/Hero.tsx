@@ -26,7 +26,7 @@ export function Hero() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="#services">View Services</Button>
+                <Button href="#services">Train With Us</Button>
                 <Button variant="outline" href="/contact">Get in Touch</Button>
               </div>
             </div>
