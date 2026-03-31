@@ -121,9 +121,7 @@ export function Header() {
       <header
         className={cn(
           "fixed left-0 top-0 w-full px-[15px] py-5 z-[9999] transition-all duration-300",
-          scrolled
-            ? "bg-black/90 backdrop-blur-sm"
-            : "lg:pt-[55px]",
+          scrolled && "bg-black/90 backdrop-blur-sm",
           hidden && scrolled && "-translate-y-[120%]"
         )}
       >

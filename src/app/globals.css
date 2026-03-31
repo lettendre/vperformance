@@ -89,6 +89,43 @@
   transform: skewY(5deg);
 }
 
+/* ===== Team card — no-photo variant ===== */
+.team-card-nophoto {
+  background: var(--color-dark-2);
+}
+
+.team-card-nophoto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 18px,
+    var(--color-accent) 18px,
+    var(--color-accent) 19px
+  );
+  opacity: 0.04;
+}
+
+.team-card-nophoto-initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+  font-family: var(--font-heading);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-accent);
+  opacity: 0.1;
+  letter-spacing: 0.05em;
+  user-select: none;
+  pointer-events: none;
+}
+
 /* ===== Gallery masonry ===== */
 .gallery-grid {
   display: grid;

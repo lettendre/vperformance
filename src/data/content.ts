@@ -69,61 +69,61 @@ export const certifications: CertificationItem[] = [
 export const homeServices: ServiceItem[] = [
   {
     slug: "youth-fitness",
-    image: "/images/classes/class-1.avif",
+    image: "/images/services/youth-fitness.avif",
     title: "Youth Fitness (Ages 13–18)",
     description: "Build the Foundation. Perform at Your Best.",
   },
   {
     slug: "personal-training",
-    image: "/images/classes/class-2.avif",
+    image: "/images/services/personal-training.avif",
     title: "Personal Training",
     description: "One Coach. One Plan. Zero Guesswork.",
   },
   {
     slug: "adult-fitness",
-    image: "/images/classes/class-3.avif",
+    image: "/images/services/adult-fitness.avif",
     title: "Adult & General Fitness",
     description: "Train With Purpose. Move for Life.",
   },
   {
     slug: "senior-fitness",
-    image: "/images/classes/class-1.avif",
+    image: "/images/services/senior-fitness.avif",
     title: "Senior Fitness",
     description: "Move Well. Stay Strong. Live Independently.",
   },
   {
     slug: "injury-rehabilitation",
-    image: "/images/classes/class-2.avif",
+    image: "/images/services/injury-rehab.avif",
     title: "Injury Rehabilitation",
     description: "Fix the Root Cause. Not Just the Pain.",
   },
   {
     slug: "pre-postnatal-fitness",
-    image: "/images/classes/class-3.avif",
+    image: "/images/services/pre-and-postnatal.avif",
     title: "Pre & Postnatal Fitness",
     description: "Strong Through Pregnancy. Recovered After.",
   },
   {
     slug: "boxing-combat-sports",
-    image: "/images/classes/class-1.avif",
+    image: "/images/services/boxing.avif",
     title: "Boxing, Kickboxing & Combat Sports",
     description: "Train Like a Fighter. No Experience Needed.",
   },
   {
     slug: "commercial-dance",
-    image: "/images/classes/class-2.avif",
+    image: "/images/services/commercial-dance.avif",
     title: "Commercial Dance Classes",
     description: "Move with Confidence. Perform with Expression.",
   },
   {
     slug: "corporate-group-fitness",
-    image: "/images/classes/class-3.avif",
+    image: "/images/services/corporate-fitness.avif",
     title: "Corporate Group Fitness",
     description: "Healthier Teams. Better Performance.",
   },
   {
     slug: "breathwork",
-    image: "/images/classes/class-1.avif",
+    image: "/images/services/breathing-exercise.avif",
     title: "Breathwork: Sleep, Recovery & Stress",
     description: "Breathe Better. Recover Faster. Stress Less.",
   },
@@ -148,7 +148,7 @@ export interface ServicesPageItem {
 export const servicesPageItems: ServicesPageItem[] = [
   {
     slug: "youth-fitness",
-    image: "/images/services/services-1.avif",
+    image: "/images/services/youth-fitness.avif",
     title: "Youth Fitness (Ages 13–18)",
     tagline: "Build the Foundation. Perform at Your Best.",
     description:
@@ -163,7 +163,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "personal-training",
-    image: "/images/services/services-2.avif",
+    image: "/images/services/personal-training.avif",
     title: "Personal Training",
     tagline: "One Coach. One Plan. Zero Guesswork.",
     description:
@@ -172,7 +172,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "adult-fitness",
-    image: "/images/services/services-3.avif",
+    image: "/images/services/adult-fitness.avif",
     title: "Adult & General Fitness",
     tagline: "Train With Purpose. Move for Life.",
     description:
@@ -181,7 +181,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "senior-fitness",
-    image: "/images/services/services-4.avif",
+    image: "/images/services/senior-fitness.avif",
     title: "Senior Fitness",
     tagline: "Move Well. Stay Strong. Live Independently.",
     description:
@@ -196,7 +196,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "injury-rehabilitation",
-    image: "/images/services/services-1.avif",
+    image: "/images/services/injury-rehab.avif",
     title: "Injury Rehabilitation",
     tagline: "Fix the Root Cause. Not Just the Pain.",
     description:
@@ -211,7 +211,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "pre-postnatal-fitness",
-    image: "/images/services/services-2.avif",
+    image: "/images/services/pre-and-postnatal.avif",
     title: "Pre & Postnatal Fitness",
     tagline: "Strong Through Pregnancy. Recovered After.",
     description:
@@ -225,7 +225,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "boxing-combat-sports",
-    image: "/images/services/services-3.avif",
+    image: "/images/services/boxing.avif",
     title: "Boxing, Kickboxing & Combat Sports",
     tagline: "Train Like a Fighter. No Experience Needed.",
     description:
@@ -243,7 +243,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "commercial-dance",
-    image: "/images/services/services-4.avif",
+    image: "/images/services/commercial-dance.avif",
     title: "Commercial Dance Classes",
     tagline: "Move with Confidence. Perform with Expression.",
     description:
@@ -253,7 +253,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "corporate-group-fitness",
-    image: "/images/services/services-1.avif",
+    image: "/images/services/corporate-fitness.avif",
     title: "Corporate Group Fitness",
     tagline: "Healthier Teams. Better Performance.",
     description:
@@ -263,7 +263,7 @@ export const servicesPageItems: ServicesPageItem[] = [
   },
   {
     slug: "breathwork",
-    image: "/images/services/services-2.avif",
+    image: "/images/services/breathing-exercise.avif",
     title: "Breathwork: Sleep, Recovery & Stress",
     tagline: "Breathe Better. Recover Faster. Stress Less.",
     description:
@@ -330,70 +330,52 @@ export const homeTeamMembers: TeamMember[] = [
   {
     name: "Ashan Vimuktha",
     role: "Director / Head Coach",
-    image: "/images/team/team-1.avif",
+    image: "/images/team/placeholder.jpg",
   },
   {
     name: "Vindya Kalpani",
     role: "Director",
-    image: "/images/team/team-2.avif",
+    image: "/images/team/placeholder.jpg",
   },
   {
     name: "Nadeesh Manoj Bandara",
     role: "Director",
-    image: "/images/team/team-3.avif",
+    image: "/images/team/placeholder.jpg",
   },
 ];
 
 export const teamPageMembers: TeamMember[] = [
   {
-    name: "Athart Rachel",
-    role: "Gym Trainer",
-    image: "/images/team/team-1.avif",
+    name: "Ashan Vimuktha",
+    role: "Director / Head Coach",
+    image: "/images/team/placeholder.jpg",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
-    name: "Athart Rachel",
-    role: "Gym Trainer",
-    image: "/images/team/team-2.avif",
+    name: "Vindya Kalpani",
+    role: "Director",
+    image: "/images/team/placeholder.jpg",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
-    name: "Athart Rachel",
-    role: "Gym Trainer",
-    image: "/images/team/team-3.avif",
+    name: "Nadeesh Manoj Bandara",
+    role: "Director",
+    image: "/images/team/placeholder.jpg",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },
     ],
   },
   {
-    name: "Athart Rachel",
-    role: "Gym Trainer",
-    image: "/images/team/team-4.avif",
-    socials: [
-      { platform: "instagram", href: "#", icon: "instagram" },
-      { platform: "email", href: "#", icon: "mail" },
-    ],
-  },
-  {
-    name: "Athart Rachel",
-    role: "Gym Trainer",
-    image: "/images/team/team-5.avif",
-    socials: [
-      { platform: "instagram", href: "#", icon: "instagram" },
-      { platform: "email", href: "#", icon: "mail" },
-    ],
-  },
-  {
-    name: "Athart Rachel",
-    role: "Gym Trainer",
-    image: "/images/team/team-6.avif",
+    name: "Nimasha Perera",
+    role: "Director",
+    image: "/images/team/placeholder.jpg",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },

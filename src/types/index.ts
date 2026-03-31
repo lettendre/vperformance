@@ -33,7 +33,7 @@ export interface PricingPlan {
 export interface TeamMember {
   name: string;
   role: string;
-  image: string;
+  image?: string;
   socials?: SocialLink[];
 }
 

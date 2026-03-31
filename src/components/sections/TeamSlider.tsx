@@ -5,6 +5,15 @@ import { Button } from "@/components/ui/Button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import type { TeamMember } from "@/types";
 
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+}
+
 interface TeamSliderProps {
   members: TeamMember[];
   showButton?: boolean;
@@ -88,9 +97,18 @@ export function TeamSlider({ members, showButton = true }: TeamSliderProps) {
           {visibleMembers.map((member, i) => (
             <div
               key={`${member.name}-${i}`}
-              className="team-card h-[450px] relative overflow-hidden bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url('${member.image}')` }}
+              className={`team-card h-[450px] relative overflow-hidden ${
+                member.image
+                  ? "bg-cover bg-center bg-no-repeat"
+                  : "team-card-nophoto"
+              }`}
+              style={member.image ? { backgroundImage: `url('${member.image}')` } : undefined}
             >
+              {!member.image && (
+                <div className="team-card-nophoto-initials">
+                  {getInitials(member.name)}
+                </div>
+              )}
               <div className="team-card-overlay">
                 <h3 className="text-white text-lg font-semibold mb-3 block">
                   {member.name}

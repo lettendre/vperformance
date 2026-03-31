@@ -1,55 +1,35 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
 export function Hero() {
   return (
-    <section className="relative bg-dark-1 bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/breadcrumb-bg.avif')" }}>
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="relative z-10 min-h-screen flex items-center">
-        <div className="max-w-[1200px] mx-auto px-6 md:px-4 w-full py-32 md:py-0">
-          <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
-            {/* Left — Content */}
-            <div className="md:w-1/2">
-              <span className="inline-block text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-5">
-                Performance-Driven Training
-              </span>
+    <section
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat overflow-hidden flex items-center justify-center"
+      style={{ backgroundImage: "url('/images/hero/hero-1.avif')" }}
+    >
+      {/* Dark overlay + bottom gradient for depth */}
+      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
 
-              <h1 className="text-[42px] md:text-[52px] lg:text-[64px] font-extrabold text-white leading-[1.05] tracking-tight mb-6">
-                Train Smarter.
-                <br />
-                <span className="text-accent">Move Better.</span>
-              </h1>
+      {/* Centered content */}
+      <div className="relative z-10 text-center px-6 py-32 md:py-40 max-w-[800px] mx-auto">
+        <span className="inline-block text-accent text-xs font-semibold uppercase tracking-[0.3em] mb-6">
+          Performance-Driven Training
+        </span>
 
-              <p className="text-white/60 text-base md:text-lg leading-[1.75] mb-10 max-w-[460px]">
-                Built on 10+ years of movement science, world-class certifications,
-                and hands-on experience coaching over 500 clients and athletes.
-              </p>
+        <h1 className="text-[44px] md:text-[60px] lg:text-[76px] font-extrabold text-white leading-[1.02] tracking-[-0.02em] mb-6">
+          Train Smarter.
+          <br />
+          <span className="text-accent">Move Better.</span>
+        </h1>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="#services">Train With Us</Button>
-                <Button variant="outline" href="/contact">Get in Touch</Button>
-              </div>
-            </div>
+        <p className="text-white/55 text-base md:text-lg font-light leading-[1.8] mb-12 max-w-[520px] mx-auto">
+          Built on 10+ years of movement science, world-class certifications,
+          and hands-on experience coaching over 500 clients and athletes.
+        </p>
 
-            {/* Right — Image */}
-            <div className="md:w-1/2">
-              <div className="relative">
-                <Image
-                  src="/images/hero/hero-1.avif"
-                  alt="V Performance Training"
-                  width={800}
-                  height={900}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  quality={80}
-                  className="w-full h-[400px] md:h-[520px] lg:h-[600px] object-cover rounded-lg"
-                  priority
-                  fetchPriority="high"
-                />
-                {/* Accent border detail */}
-                <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-accent/20 rounded-lg -z-10 hidden md:block" />
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Button href="#services">Train With Us</Button>
+          <Button variant="outline" href="/contact">Get in Touch</Button>
         </div>
       </div>
     </section>
