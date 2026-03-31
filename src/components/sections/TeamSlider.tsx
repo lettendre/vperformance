@@ -25,8 +25,9 @@ export function TeamSlider({ members, showButton = true }: TeamSliderProps) {
 
   useEffect(() => {
     const updateItems = () => {
-      if (window.innerWidth < 768) setItemsPerView(1);
-      else if (window.innerWidth < 992) setItemsPerView(2);
+      const w = window.innerWidth;
+      if (w < 768) setItemsPerView(1);
+      else if (w < 992) setItemsPerView(2);
       else setItemsPerView(3);
     };
     updateItems();

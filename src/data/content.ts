@@ -330,7 +330,7 @@ export const homeTeamMembers: TeamMember[] = [
   {
     name: "Ashan Vimuktha",
     role: "Director / Head Coach",
-    image: "/images/team/placeholder.jpg",
+    image: "/images/team/ashan_vimuktha.jpg",
   },
   {
     name: "Vindya Kalpani",
@@ -348,9 +348,9 @@ export const teamPageMembers: TeamMember[] = [
   {
     name: "Ashan Vimuktha",
     role: "Director / Head Coach",
-    image: "/images/team/placeholder.jpg",
+    image: "/images/team/ashan_vimuktha.jpg",
     socials: [
-      { platform: "instagram", href: "#", icon: "instagram" },
+      { platform: "linkedin", href: "https://www.linkedin.com/in/ashan-vimuktha-23528511b/", icon: "linkedin" },
       { platform: "email", href: "#", icon: "mail" },
     ],
   },

@@ -13,11 +13,17 @@ export function Services() {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
+  const rafId = useRef(0);
+
   const checkScroll = useCallback(() => {
-    const el = trackRef.current;
-    if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 2);
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 2);
+    cancelAnimationFrame(rafId.current);
+    rafId.current = requestAnimationFrame(() => {
+      const el = trackRef.current;
+      if (!el) return;
+      const { scrollLeft, scrollWidth, clientWidth } = el;
+      setCanScrollLeft(scrollLeft > 2);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 2);
+    });
   }, []);
 
   useEffect(() => {
@@ -29,14 +35,27 @@ export function Services() {
     return () => {
       el.removeEventListener("scroll", checkScroll);
       window.removeEventListener("resize", checkScroll);
+      cancelAnimationFrame(rafId.current);
     };
   }, [checkScroll]);
+
+  const cardWidthRef = useRef(340);
+
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el) return;
+    const measure = () => {
+      cardWidthRef.current = el.querySelector("a")?.offsetWidth || 340;
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
 
   const scroll = (dir: "left" | "right") => {
     const el = trackRef.current;
     if (!el) return;
-    const cardWidth = el.querySelector("a")?.offsetWidth || 340;
-    el.scrollBy({ left: dir === "left" ? -cardWidth - 24 : cardWidth + 24, behavior: "smooth" });
+    el.scrollBy({ left: dir === "left" ? -cardWidthRef.current - 24 : cardWidthRef.current + 24, behavior: "smooth" });
   };
 
   // Touch swipe
@@ -111,6 +130,7 @@ export function Services() {
                   width={600}
                   height={400}
                   sizes="(max-width: 640px) 280px, 340px"
+                  quality={60}
                   className="w-full h-[200px] md:h-[220px] object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>

@@ -26,7 +26,7 @@ export function Button({
     "inline-block text-[14px] font-semibold uppercase tracking-[0.03em] text-white transition-all duration-300";
 
   const variants = {
-    primary: "bg-accent px-[30px] py-[17px] hover:bg-accent-hover hover:scale-105 hover:shadow-lg hover:shadow-accent/25",
+    primary: "bg-accent-solid px-[30px] py-[17px] hover:bg-accent-solid-hover hover:scale-105 hover:shadow-lg hover:shadow-accent/25",
     outline:
       "bg-transparent border-2 border-accent px-[30px] py-[17px] hover:bg-accent",
     pricing: "block bg-[#333333] px-[30px] py-[17px] unskew hover:bg-accent",
