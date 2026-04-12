@@ -27,6 +27,11 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: true,
   },
+
+  images: {
+    qualities: [60, 65, 75, 85],
+  },
+
   async headers() {
     return [
       {

@@ -128,7 +128,7 @@ export function Footer() {
               href="https://www.deeesignlab.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#4db8e0] underline decoration-[#4db8e0]/30 hover:text-white hover:decoration-white/30 transition-colors"
+              className="text-[#04575F] underline decoration-[#04575F]/30 hover:text-white hover:decoration-white/30 transition-colors"
             >
               DEEESIGN;
             </a>

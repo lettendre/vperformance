@@ -327,24 +327,10 @@ export const pricingPlans: PricingPlan[] = [
 ];
 
 export const homeTeamMembers: TeamMember[] = [
-  {
-    name: "Ashan Vimuktha",
-    role: "Director / Head Coach",
-    image: "/images/team/ashan_vimuktha.jpg",
-  },
-  {
-    name: "Vindya Kalpani",
-    role: "Director",
-    image: "/images/team/placeholder.jpg",
-  },
-  {
-    name: "Nadeesh Manoj Bandara",
-    role: "Director",
-    image: "/images/team/placeholder.jpg",
-  },
+
 ];
 
-export const teamPageMembers: TeamMember[] = [
+export const teamPageDirectors: TeamMember[] = [
   {
     name: "Ashan Vimuktha",
     role: "Director / Head Coach",
@@ -381,6 +367,10 @@ export const teamPageMembers: TeamMember[] = [
       { platform: "email", href: "#", icon: "mail" },
     ],
   },
+];
+
+export const teamPageMembers: TeamMember[] = [
+ 
 ];
 
 export const testimonials: TestimonialItem[] = [

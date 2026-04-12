@@ -14,15 +14,16 @@ export function Certifications() {
               className="bg-dark-2 p-[30px_20px] text-center rounded-xl transition-all duration-300 h-full hover:-translate-y-1.5 hover:bg-[#111]"
             >
               <div className="bg-white rounded-[14px] p-5 mb-5">
-                <Image
-                  src={cert.image}
-                  alt={cert.title}
-                  width={80}
-                  height={80}
-                  sizes="80px"
-                  quality={65}
-                  className="max-h-[80px] w-auto mx-auto object-contain"
-                />
+                <div className="relative h-[80px] w-full">
+                  <Image
+                    src={cert.image}
+                    alt={cert.title}
+                    fill
+                    sizes="80px"
+                    quality={65}
+                    className="mx-auto object-contain"
+                  />
+                </div>
               </div>
               <h3 className="text-white text-lg font-semibold mb-3">
                 {cert.title}

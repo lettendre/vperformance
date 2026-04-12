@@ -31,7 +31,7 @@ export function Pricing() {
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1a6e8e] text-white text-[11px] font-semibold uppercase tracking-[0.1em] px-4 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#04575F] text-white text-[11px] font-semibold uppercase tracking-[0.1em] px-4 py-1 rounded-full">
                   Most Popular
                 </div>
               )}

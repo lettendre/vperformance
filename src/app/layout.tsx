@@ -67,8 +67,8 @@ export const metadata: Metadata = {
     ],
   },
   other: {
-    "theme-color": "#2596be",
-    "msapplication-TileColor": "#2596be",
+    "theme-color": "#04575F",
+    "msapplication-TileColor": "#04575F",
     "geo.region": "LK-1",
     "geo.placename": "Colombo, Sri Lanka",
     ICBM: "6.8863452152126765, 79.87899885178108",
