@@ -334,7 +334,7 @@ export const teamPageDirectors: TeamMember[] = [
   {
     name: "Ashan Vimuktha",
     role: "Director / Head Coach",
-    image: "/images/team/ashan_vimuktha.jpg",
+    image: "/images/team/ashan_vimuktha.avif",
     socials: [
       { platform: "linkedin", href: "https://www.linkedin.com/in/ashan-vimuktha-23528511b/", icon: "linkedin" },
       { platform: "email", href: "#", icon: "mail" },
@@ -343,7 +343,7 @@ export const teamPageDirectors: TeamMember[] = [
   {
     name: "Vindya Kalpani",
     role: "Director",
-    image: "/images/team/placeholder.jpg",
+    image: "/images/team/placeholder.avif",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },
@@ -352,7 +352,7 @@ export const teamPageDirectors: TeamMember[] = [
   {
     name: "Nadeesh Manoj Bandara",
     role: "Director",
-    image: "/images/team/placeholder.jpg",
+    image: "/images/team/placeholder.avif",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },
@@ -361,7 +361,7 @@ export const teamPageDirectors: TeamMember[] = [
   {
     name: "Nimasha Perera",
     role: "Director",
-    image: "/images/team/placeholder.jpg",
+    image: "/images/team/placeholder.avif",
     socials: [
       { platform: "instagram", href: "#", icon: "instagram" },
       { platform: "email", href: "#", icon: "mail" },
