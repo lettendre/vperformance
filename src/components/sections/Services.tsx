@@ -58,23 +58,6 @@ export function Services() {
     el.scrollBy({ left: dir === "left" ? -cardWidthRef.current - 24 : cardWidthRef.current + 24, behavior: "smooth" });
   };
 
-  // Touch swipe
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-  const handleTouchMove = (e: React.TouchEvent) => {
-    touchEndX.current = e.touches[0].clientX;
-  };
-  const handleTouchEnd = () => {
-    const diff = touchStartX.current - touchEndX.current;
-    if (Math.abs(diff) > 50) {
-      scroll(diff > 0 ? "right" : "left");
-    }
-  };
-
   return (
     <section id="services" className="bg-dark-3 py-12 md:py-20">
       <div className="container mx-auto px-4">
@@ -111,11 +94,8 @@ export function Services() {
         {/* Slider track */}
         <div
           ref={trackRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth -mx-4 px-4"
+          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth -mx-4 px-4 overscroll-x-contain"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
         >
           {homeServices.map((service) => (
             <Link
@@ -131,6 +111,8 @@ export function Services() {
                   height={400}
                   sizes="(max-width: 640px) 280px, 340px"
                   quality={60}
+                  priority
+                  loading="eager"
                   className="w-full h-[200px] md:h-[220px] object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
