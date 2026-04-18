@@ -23,7 +23,7 @@ export default function TeamPage() {
       />
       <TeamGrid
         members={teamPageMembers}
-        subtitle="Our Team"
+        subtitle="Driving Our Vision"
         title="TRAIN WITH EXPERTS"
       />
     </>

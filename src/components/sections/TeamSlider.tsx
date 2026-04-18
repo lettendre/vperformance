@@ -77,8 +77,8 @@ export function TeamSlider({ members, showButton = true }: TeamSliderProps) {
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10">
           <SectionTitle
-            subtitle="Our Team"
-            title="TRAIN WITH EXPERTS"
+            subtitle="Driving Our Vision"
+            title="MEET THE LEADERS"
             align="left"
             className="mb-0"
           />
